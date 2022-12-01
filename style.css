@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; 
+    flex-direction: column;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.menu div {
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+}
+
+.menu a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 20px;
+    transition: background 1s;
+}
+
+a:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+table {
+    font-size: 1rem;
+    border: none;
+    border-spacing: 0;
+    width: 100vw;
+}
+
+table th {
+    text-align: center;
+    background-color: rgb(78, 85, 189);
+    color: white;
+}
+
+table tr{
+    text-align: center;
+    width: 100%;
+}
+
+
+table td {
+    padding: 0 40px;
+    border: none;
+}
+
+table tr:nth-child(even) {
+    border: none;
+    background-color: rgb(68, 78, 218);
+    color: white;
+}
+
+table{
+    border-bottom: 4px solid rgb(78, 85, 189);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px;
+    gap: 40px 0;
+}
+
+input {
+    margin: 0 auto;
+}
+
+form p{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+input[type=button] {
+    background-color: rgb(78, 85, 189);
+    padding: 10px;
+    border: none;
+    font-weight: 700;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    transition: 1s;
+}
+input[type=button]:hover {
+    opacity: 70%;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(143, 255, 255);
+}
+
+button#click{
+    background-color: rgb(53, 92, 199);
+    border: none;
+    padding: 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: flex;
+    animation: nivel1 infinite alternate;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+
+@keyframes nivel1 {
+    0% {
+        transform: translate(-200px);
+    }
+    100% {
+        transform: translate(200px);
+    }
+}
+
+@keyframes nivel2 {
+    0% {
+        transform: translate(-100px, -200px);
+    }
+    50% {
+        transform: translate(-200px, 100px);
+    }
+    75% {
+        transform: translate(200px, 50px);
+    }
+    100% {
+        transform: translate(-100px, -200px);
+    }
+}
+
+@keyframes nivel3 {
+    0% {
+        transform: translate(-100px, -200px) rotate(95deg);
+    }
+    50% {
+        transform: translate(-200px, 100px) rotate(300deg);
+    }
+    75% {
+        transform: translate(200px, 50px) rotate(50deg);
+    }
+    100% {
+        transform: translate(-100px, -200px) rotate(100deg);
+    }
+}
+
+@keyframes nivel4 {
+    0% {
+        transform: translate(100px, 200px) rotate(-95deg);
+    }
+    50% {
+        transform: translate(200px, -100px) rotate(-300deg);
+    }
+    75% {
+        transform: translate(-200px, -50px) rotate(-50deg);
+    }
+    100% {
+        transform: translate(100px, 200px) rotate(-100deg);
+    }
+}
+
+@keyframes nivel5 {
+    0% {
+        transform: translate(-200px, 200px) rotate(-360deg);
+    }
+    25% {
+        transform: translate(300px, -300px) rotate(0deg);
+    }
+    50% {
+        transform: translate(200px, 200px) rotate(360deg);
+    }
+    75% {
+        transform: translate(-400px, -50px) rotate(780deg);
+    }
+    100% {
+        transform: translate(100px, -300px) rotate(-360deg);
+    }
+}
+
+.velocidades button {
+    padding: 5px 10px;
+    margin: 20px 5px;
+    font-weight: 700;
+}
+
+.voltar a{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    align-items: center;
+    transition: 1s;
+}
+
+.voltar a:hover {
+    background-color: rgb(218, 218, 218);
+    color: black;
+}
